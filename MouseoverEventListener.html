@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<div id="myDiv" style="height: 100px; width: 100px; background-color: red;"></div>
+
+
+<script>
+
+
+const myDiv = document.getElementById("myDiv").addEventListener("mouseover", function () {
+
+    this.style.background = "blue";
+    this.style.height = "500px";
+    this.style.width = "100%";
+    this.style.transition = "1s";
+    
+});
+
+const my_Div = document.getElementById ("myDiv").addEventListener("mouseout", function () {
+
+    this.style.background = "red";
+    this.style.height = "100px";
+    this.style.width = "100px";
+    this.style.transition = "1s";
+
+    
+});
+
+
+</script>
+
+</script>
+</body>
+</html>
