@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  .progress {
+    background-color: rgb(206, 200, 200);
+    height: 50px;
+    width: 1000px;
+    border-radius: 100px;
+    overflow: hidden;
+    position: relative;
+    transition: 5s;
+    
+  }
+
+
+.bar {
+  background-color: rgb(132, 255, 132);
+  height: 100%;
+  width: 50px;
+  border-radius: 100px;
+  position: absolute;
+  transition: 5s;
+}
+
+
+</style>
+
+
+<body>
+  
+
+<div class="progress">
+  <div class="bar" id="bar"></div>
+</div>
+
+<button id="myButton">Go</button>
+<button id="resetButton">Reset</button>
+
+
+
+<script>
+
+function handleClick() { 
+  bar.style.width = "100%";
+  
+};
+
+
+function resetButton() {
+  bar.style.width = "50px";
+  
+}
+
+document.getElementById("myButton").addEventListener("click", handleClick);
+
+document.getElementById ("resetButton").addEventListener("click", resetButton);
+
+
+
+
+</script>
+
+</body>
+</html>
